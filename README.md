@@ -1,12 +1,48 @@
-# Goose Finance
+# Dexf Contract
 
-https://goosedefi.com Feel free to read the code. More details coming soon.
+This project utilizes [Truffle Suite](https://www.trufflesuite.com/) to automate testing.
 
-## Deployed Contracts / Hash
+You will need to install [Truffle](https://www.trufflesuite.com/truffle):
 
-### BSCMAINNET
+```
+npm install truffle -g
+```
 
-- EggToken - https://bscscan.com/token/0xf952fc3ca7325cc27d15885d37117676d25bfda6
-- MasterChef - https://bscscan.com/address/0xe70E9185F5ea7Ba3C5d63705784D8563017f2E57
-- Timelock - https://bscscan.com/address/0x2Ef488DE034567e9B8D312928fD52812A242aB3A
-- MultiCall - https://bscscan.com/address/0x1ee38d535d541c55c9dae27b12edf090c608e6fb
+and [Ganache CLI](https://github.com/trufflesuite/ganache-cli):
+
+```
+npm install -g ganache-cli
+```
+
+Once installed, run Ganache CLI in a terminal:
+
+```
+My-Comp:~ johndoe$ ganache-cli
+```
+
+Then, from the root of this project, run the tests:
+
+```
+truffle test
+```
+
+## Dexf Contract
+
+You can test Dexf contract by forking mainnet into local.
+You will need to copy `start.sh.example` to `start.sh` in root directory.
+And please add your infura id and mnemonic.
+
+Then, from the root of this project, run the tests:
+
+```
+sh ./start.sh
+```
+
+```
+truffle test
+```
+or
+
+```
+truffle test ./test/LPFarmTest.js
+```

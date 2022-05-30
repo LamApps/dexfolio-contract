@@ -1,9 +1,8 @@
-/node_modules/
-/.idea/
-/secrets.json
-/scripts/
-/migrations/
-/build/
-/test/
-/accounts.json
-/truffle-config.js
+node_modules/
+contracts/artifacts/
+build/
+start.sh
+package-lock.json
+test/abis/DEXF.json
+test/abis/erc20.json
+test/abis/lpFarm.json
